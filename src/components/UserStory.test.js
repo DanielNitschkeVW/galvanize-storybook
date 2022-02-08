@@ -56,6 +56,7 @@ describe('UserStory', () => {
 
   it('can click the first button', () => {
     const button = wrapper.find("button").first()
+    expect(mockFunc).not.toHaveBeenCalled()
     button.simulate("click")
     expect(mockFunc).toHaveBeenCalled()
     expect(mockFunc).toHaveBeenCalledWith("delivered")
@@ -63,6 +64,7 @@ describe('UserStory', () => {
 
   it('can click the last button', () => {
     const button = wrapper.find("button").last()
+    expect(mockFunc).not.toHaveBeenCalled()
     button.simulate("click")
     expect(mockFunc).toHaveBeenCalled()
     expect(mockFunc).toHaveBeenCalledWith("finished")
