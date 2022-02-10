@@ -28,7 +28,11 @@
     "@storybook/addon-links": "^6.4.18",
     "@storybook/addons": "^3.3.13",
     "@storybook/react": "^3.3.13",
-    "babel-core": "^6.26.0"
+    "@types/node-fetch": "^2.5.12",
+    "babel-core": "^6.26.0",
+    "fetch-mock": "^9.11.0",
+    "node-fetch": "^2.6.7",
+    "node-http": "^0.0.5"
   },
   "browserslist": {
     "production": [
